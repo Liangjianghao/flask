@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>抖音短视频解析下载 - 抖音视频去水印保存到本地</title>
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='1.css') }}">
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <img src="/static/douyin.png" alt="douyin" width="42" height="42">
+            <span class="navbar-brand">抖音短视频解析下载</span>
+        </div>
+    </div>
+</div>
+
+<form action="/" method="post">
+<div class="container" id="app" style="margin-top: 70px;">
+    <div class="row">
+        <div class="col-md-12">
+            <div style="margin-bottom: 20px;">
+                <p>抖音短视频解析下载工具特点:</p>
+                <ol>
+                    <li>支持解析任何抖音视频</li>
+                    <li>解析出来的视频没有水印</li>
+                </ol>
+
+                <p>使用方法:</p>
+                <ol>
+                    <li>打开抖音短视频APP，点开某个视频，点击右下角分享按钮，在分享弹框中点击复制链接或通过分享到微信QQ等获取分享链接</li>
+                    <li>将刚才复制的链接粘贴到下面的输入框</li>
+                </ol>
+            </div>
+
+            <div class="input-group input-group-lg" style="margin-bottom: 10px;">
+                <input name="baseUrl"  type="text" class="form-control link-input" placeholder="请将APP里复制的视频链接粘贴到这里">
+                  <div class="input-group-btn">
+                      <button class="btn btn-default" id="jiexi" type="submit">解析视频</button>
+                  </div>
+            </div>
+                <div class="input-group input-group-lg" style="margin-bottom: 10px;">
+                <input name="realUrl"  type="text" class="form-control link-input" placeholder="视频去水印地址">
+                  <div class="input-group-btn">
+                      <button class="btn btn-default" id=“download” type="button">下载视频</button>
+                  </div>
+            </div>
+        </div>
+    </div>   
+</div>
+</form>
+</body>
+</html>
